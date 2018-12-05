@@ -38,7 +38,7 @@ public class Enemy_2 : Enemy {
     {
         //bezier curves work with a u 0 - 1
         float u = (Time.time - birthTime) / lifeTime;
-        if(u > 1)
+        if(u >= 1)
         {
             //u has become bigger than the lifecycle of the object set
             Destroy(this.gameObject);
